@@ -1,0 +1,57 @@
+h1 {
+    color: red;
+    text-align: center;
+    height: 50px;
+    font-size: 50px;
+}
+
+.posts {
+    background-color: rgb(34, 25, 25);
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping to next line */
+    gap: 20px; /* spacing between boxes */
+    justify-content: center; /* center the boxes */
+}
+#username {
+    background-color: beige;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    align-items: start;
+    margin-top: 0%;
+    border: 1px solid rgb(152, 132, 132);
+    border-bottom: 1px solid #ccc;
+}
+.singlePost {
+    background-color:blanchedalmond;
+    box-shadow: 2px 4px 8px 2px rgb(188, 5, 5);
+
+    width: 300px;
+    height: 200px; 
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+button{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(171, 106, 22);
+    justify-content: center;
+    align-items: center;
+    margin-left: 45%;
+    font-style: bold;
+}
+#deletebutton{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(202, 0, 0);
+    margin-left: 20%;
+    align-items:center;
+}
