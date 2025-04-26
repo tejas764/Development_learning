@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini chats</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+   <div class="Head"> <h1>All chats</h1>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="http://localhost:8080/chats/new">New Chat</a></div>
+    <% for (let chat of allchats){  %>
+    <div class="user">
+        <h3>From:<%= chat.from %></h3>
+        <div class="msg"> 
+            
+        <p><%= chat.msg %></p>
+        <form method="get" action="/chats/<%=chat._id%>/edit">
+            <button type="submit">edit</button>
+        </form>
+        <br>
+        <br>
+        <form method="POST" action="/chats/<%= chat._id %>/delete?_method=DELETE">
+            <button type="submit">Delete</button>
+        </form>
+        
+        
+    </div>
+    <div class="from">TO:<%= chat.to %></div>
+    </div>
+    <hr>
+     <% } %>
+</body>
+</html>
